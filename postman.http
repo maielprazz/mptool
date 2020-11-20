@@ -1,0 +1,114 @@
+# GET http://localhost:5000/api/profile/test
+
+
+# POST http://localhost:5000/api/users/register HTTP/1.1
+# content-type: application/json
+
+# {
+#     "name": "Test",
+#     "email": "ismail.prasetyo@gmail.com",
+#     "password" : "123456",
+#     "password2" : "123456"
+# }
+
+# POST http://localhost:5000/api/users/login HTTP/1.1
+# content-type: application/json
+
+# {
+#     "email": "ismail4.prasetyo@gmail.com",
+#     "password" : "123456"
+# }
+
+# GET http://localhost:5000/api/users/current HTTP/1.1
+# content-type: application/json
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVlN2MzNDg3MGQzNGZiMjZlYzczY2VhNyIsIm5hbWUiOiJJc21haWwiLCJhdmF0YXIiOiIvL3d3dy5ncmF2YXRhci5jb20vYXZhdGFyL2U4MDk2N2Y0OGUwZTY2MmViMzA3YzViYzM2NTgyMGNhP3M9MjAwJnI9cGcmZD1tbSIsImlhdCI6MTU4NTcyMDUwMSwiZXhwIjoxNTg1NzI0MTAxfQ.0zGz2p2ofMaOyxuP0bo927GKBl6ZyNq8fUZmqidnu9o
+
+GET http://localhost:5000/api/profile HTTP/1.1
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVlN2MzNDg3MGQzNGZiMjZlYzczY2VhNyIsIm5hbWUiOiJJc21haWwiLCJhdmF0YXIiOiIvL3d3dy5ncmF2YXRhci5jb20vYXZhdGFyL2U4MDk2N2Y0OGUwZTY2MmViMzA3YzViYzM2NTgyMGNhP3M9MjAwJnI9cGcmZD1tbSIsImlhdCI6MTU4NjY3NTIwOCwiZXhwIjoxNTg2Njc4ODA4fQ.iEFJepFAftZfyaKzguZGjwrcwG-qCT9KjcvmssAFxnk
+
+# POST http://localhost:5000/api/profile HTTP/1.1
+# content-type: application/json
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVlN2MzNDg3MGQzNGZiMjZlYzczY2VhNyIsIm5hbWUiOiJJc21haWwiLCJhdmF0YXIiOiIvL3d3dy5ncmF2YXRhci5jb20vYXZhdGFyL2U4MDk2N2Y0OGUwZTY2MmViMzA3YzViYzM2NTgyMGNhP3M9MjAwJnI9cGcmZD1tbSIsImlhdCI6MTU4NjY3NTIwOCwiZXhwIjoxNTg2Njc4ODA4fQ.iEFJepFAftZfyaKzguZGjwrcwG-qCT9KjcvmssAFxnk
+# {
+#     "handle" : "test",
+#     "status" : "Developer",
+#     "skills" : "HTML,Java,CSS",
+#     "twitter"  : "http://twitter.com/johndoe",
+#     "facebook"  : "http://facebook.com/johndoe"
+# }
+
+#GET http://localhost:5000/api/profile/all HTTP/1.1
+
+
+# POST http://localhost:5000/api/profile/experience HTTP/1.1
+# content-type: application/json
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVlN2MzNDg3MGQzNGZiMjZlYzczY2VhNyIsIm5hbWUiOiJJc21haWwiLCJhdmF0YXIiOiIvL3d3dy5ncmF2YXRhci5jb20vYXZhdGFyL2U4MDk2N2Y0OGUwZTY2MmViMzA3YzViYzM2NTgyMGNhP3M9MjAwJnI9cGcmZD1tbSIsImlhdCI6MTU4NTI4MDA1MCwiZXhwIjoxNTg1MjgzNjUwfQ.Wx5zWpDJcwdfJxoepozeNP0MaCzhQMw9Cl-P3l0Q99Y
+
+# {
+#     "title": "test",
+#     "company": "Test Company",
+#     "from" : "2010-04-03",
+#     "to" : "2010-04-03",
+#     "description" :"ini adalah deskripsi"
+# }
+
+
+# POST http://localhost:5000/api/profile/education HTTP/1.1
+# content-type: application/json
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVlN2MzNDg3MGQzNGZiMjZlYzczY2VhNyIsIm5hbWUiOiJJc21haWwiLCJhdmF0YXIiOiIvL3d3dy5ncmF2YXRhci5jb20vYXZhdGFyL2U4MDk2N2Y0OGUwZTY2MmViMzA3YzViYzM2NTgyMGNhP3M9MjAwJnI9cGcmZD1tbSIsImlhdCI6MTU4NTI4MDA1MCwiZXhwIjoxNTg1MjgzNjUwfQ.Wx5zWpDJcwdfJxoepozeNP0MaCzhQMw9Cl-P3l0Q99Y
+
+# {
+#     "school": "Northon Essex",
+#     "degree": "Bachelor",
+#     "fieldofstudy" : "Biology",
+#     "from" : "2010-04-03",
+#     "to" : "2010-04-03",
+#     "description" :"ini adalah deskripsi"
+# }
+
+
+# DELETE http://localhost:5000/api/profile/experience/5e7d7d25ae84325788259f6d HTTP/1.1
+# content-type: application/json
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVlN2MzNDg3MGQzNGZiMjZlYzczY2VhNyIsIm5hbWUiOiJJc21haWwiLCJhdmF0YXIiOiIvL3d3dy5ncmF2YXRhci5jb20vYXZhdGFyL2U4MDk2N2Y0OGUwZTY2MmViMzA3YzViYzM2NTgyMGNhP3M9MjAwJnI9cGcmZD1tbSIsImlhdCI6MTU4NTI4MDA1MCwiZXhwIjoxNTg1MjgzNjUwfQ.Wx5zWpDJcwdfJxoepozeNP0MaCzhQMw9Cl-P3l0Q99Y
+
+# DELETE http://localhost:5000/api/profile/education/5e7d7e782bda72418cdabb69 HTTP/1.1
+# content-type: application/json
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVlN2MzNDg3MGQzNGZiMjZlYzczY2VhNyIsIm5hbWUiOiJJc21haWwiLCJhdmF0YXIiOiIvL3d3dy5ncmF2YXRhci5jb20vYXZhdGFyL2U4MDk2N2Y0OGUwZTY2MmViMzA3YzViYzM2NTgyMGNhP3M9MjAwJnI9cGcmZD1tbSIsImlhdCI6MTU4NTI4MDA1MCwiZXhwIjoxNTg1MjgzNjUwfQ.Wx5zWpDJcwdfJxoepozeNP0MaCzhQMw9Cl-P3l0Q99Y
+
+# DELETE http://localhost:5000/api/profile HTTP/1.1
+# content-type: application/json
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVlN2Q4MDBiNGM1MzhhNGM1ODFmMWNlOCIsIm5hbWUiOiJUZXN0IiwiYXZhdGFyIjoiLy93d3cuZ3JhdmF0YXIuY29tL2F2YXRhci85NjAwZTU4NzdkZWJjODJmM2MyODBhYWY2N2I4ZTliZj9zPTIwMCZyPXBnJmQ9bW0iLCJpYXQiOjE1ODUyODMxNDYsImV4cCI6MTU4NTI4Njc0Nn0.-SzkAPOI9lmj7Yx0GuwXwtkCWWJ2vFKBy_VfmDSJi_0
+
+# POST http://localhost:5000/api/posts HTTP/1.1
+# content-type: application/json
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVlN2MzNDg3MGQzNGZiMjZlYzczY2VhNyIsIm5hbWUiOiJJc21haWwiLCJhdmF0YXIiOiIvL3d3dy5ncmF2YXRhci5jb20vYXZhdGFyL2U4MDk2N2Y0OGUwZTY2MmViMzA3YzViYzM2NTgyMGNhP3M9MjAwJnI9cGcmZD1tbSIsImlhdCI6MTU4NTI4NjIxMywiZXhwIjoxNTg1Mjg5ODEzfQ.hkS7RuQ3Iniit1TV3YD03Rsm2rLn0rhaEQWGjxdVNFQ
+
+# {
+#     "text":"Another Posting number 1",
+#     "name" : "John Doe"
+# }
+
+
+# GET http://localhost:5000/api/posts HTTP/1.1
+# content-type: application/json
+
+
+# GET http://localhost:5000/api/posts/5e7d8d33eba53c40f8c066aa HTTP/1.1
+# content-type: application/json
+
+# DELETE http://localhost:5000/api/posts/5e7d8d33eba53c40f8c066aa HTTP/1.1
+# content-type: application/json
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVlN2MzNDg3MGQzNGZiMjZlYzczY2VhNyIsIm5hbWUiOiJJc21haWwiLCJhdmF0YXIiOiIvL3d3dy5ncmF2YXRhci5jb20vYXZhdGFyL2U4MDk2N2Y0OGUwZTY2MmViMzA3YzViYzM2NTgyMGNhP3M9MjAwJnI9cGcmZD1tbSIsImlhdCI6MTU4NTI4OTYwOCwiZXhwIjoxNTg1MjkzMjA4fQ.4P794cTGxOog-ov7rnvfWScgfrjlU7P9eOjQX31dvyc
+
+# POST http://localhost:5000/api/posts/like/5e7d8cc0eba53c40f8c066a9 HTTP/1.1
+# content-type: application/json
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVlN2MzNDg3MGQzNGZiMjZlYzczY2VhNyIsIm5hbWUiOiJJc21haWwiLCJhdmF0YXIiOiIvL3d3dy5ncmF2YXRhci5jb20vYXZhdGFyL2U4MDk2N2Y0OGUwZTY2MmViMzA3YzViYzM2NTgyMGNhP3M9MjAwJnI9cGcmZD1tbSIsImlhdCI6MTU4NTI5NzUxMCwiZXhwIjoxNTg1MzAxMTEwfQ.P_lxIhIdKxcBXc3VyEqIErP4U4OH52ir4EO7c2lNx2E
+
+
+# POST http://localhost:5000/api/posts/unlike/5e7d8cc0eba53c40f8c066a9 HTTP/1.1
+# content-type: application/json
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVlN2MzNDg3MGQzNGZiMjZlYzczY2VhNyIsIm5hbWUiOiJJc21haWwiLCJhdmF0YXIiOiIvL3d3dy5ncmF2YXRhci5jb20vYXZhdGFyL2U4MDk2N2Y0OGUwZTY2MmViMzA3YzViYzM2NTgyMGNhP3M9MjAwJnI9cGcmZD1tbSIsImlhdCI6MTU4NTI5NzUxMCwiZXhwIjoxNTg1MzAxMTEwfQ.P_lxIhIdKxcBXc3VyEqIErP4U4OH52ir4EO7c2lNx2E
+
+
+
